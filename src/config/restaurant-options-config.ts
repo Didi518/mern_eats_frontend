@@ -10,7 +10,7 @@ export const cuisinesList = [
   "Espagnol",
   "Français",
   "Fruits de Mer",
-  "Grèque",
+  "Grèc",
   "Indien",
   "Italien",
   "Japonais",
