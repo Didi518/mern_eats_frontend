@@ -32,3 +32,19 @@ export type RestaurantSearchResponse = {
   data: Restaurant[];
   pagination: { total: number; page: number; pages: number };
 };
+
+export type CheckoutSessionRequest = {
+  cartItems: {
+    menuItemId: string;
+    name: string;
+    quantity: string;
+  }[];
+  deliveryDetails: {
+    email: string;
+    name: string;
+    addressLine1: string;
+    zipCode: string;
+    city: string;
+  };
+  restaurantId: string;
+};
