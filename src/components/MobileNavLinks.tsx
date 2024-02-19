@@ -9,6 +9,18 @@ const MobileNavLinks = () => {
   return (
     <>
       <Link
+        to="/commande-statut"
+        className="bg-white items-center font-bold hover:text-orange-500"
+      >
+        Mes Commandes
+      </Link>
+      <Link
+        to="/mon-restaurant"
+        className="bg-white items-center font-bold hover:text-orange-500"
+      >
+        Mon Restaurant
+      </Link>
+      <Link
         to="/profil-utilisateur"
         className="bg-white items-center font-bold hover:text-orange-500"
       >

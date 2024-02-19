@@ -8,6 +8,7 @@ import UserProfilePage from "@/pages/UserProfilePage";
 import ManageRestaurantPage from "@/pages/ManageRestaurantPage";
 import SearchPage from "@/pages/SearchPage";
 import DetailPage from "@/pages/DetailPage";
+import OrderStatusPage from "@/pages/OrderStatusPage";
 
 const AppRoutes = () => {
   return (
@@ -38,6 +39,14 @@ const AppRoutes = () => {
         }
       />
       <Route element={<ProtectedRoute />}>
+        <Route
+          path="/commande-statut"
+          element={
+            <Layout>
+              <OrderStatusPage />
+            </Layout>
+          }
+        />
         <Route
           path="/profil-utilisateur"
           element={
